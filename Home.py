@@ -4,16 +4,16 @@ import leafmap.foliumap as leafmap
 st.set_page_config(layout="wide")
 
 
-st.sidebar.title("Agri_tech")
+st.sidebar.title("Agri_Performance")
 logo = "https://i.imgur.com/UbOXYAU.png"
 st.sidebar.image(logo)
 
 
 
-st.title("Thinking about Possibility")
+st.title("Thinking about Possibilities")
 st.markdown(
     """
-    This multipage app demonstrate the potential of today technology
+    This multipage app demonstrate the potential of today's technology
     """
 )
 
