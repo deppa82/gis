@@ -3,31 +3,27 @@ import leafmap.foliumap as leafmap
 
 st.set_page_config(layout="wide")
 
-# Customize the sidebar
-markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
-"""
 
-st.sidebar.title("About")
-st.sidebar.info(markdown)
+st.sidebar.title("Agri_tech")
 logo = "https://i.imgur.com/UbOXYAU.png"
 st.sidebar.image(logo)
 
-# Customize page title
-st.title("Thinking about Possibility")
 
+
+st.title("Thinking about Possibility")
 st.markdown(
     """
     This multipage app demonstrate the potential of today technology
     """
 )
 
+
+
 st.header("Welcome")
 
 
 
 
-m = leafmap.Map(minimap_control=True)
+m = leafmap.Map(center=[45.2248192, 0.7732142], zoom=4,minimap_control=True)
 m.add_basemap("OpenTopoMap")
 m.to_streamlit(height=500)
