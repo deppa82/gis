@@ -26,7 +26,7 @@ st.markdown(
 st.header("Welcome")
 
 
-st.markdown(markdown)
+
 
 m = leafmap.Map(minimap_control=True)
 m.add_basemap("OpenTopoMap")
