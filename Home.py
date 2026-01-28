@@ -25,5 +25,5 @@ st.header("Welcome")
 
 
 m = leafmap.Map(center=[45.224461, -0.773946], zoom=16, minimap_control=True)
-m.add_basemap("OpenTopoMap")
+m.add_basemap("SATELLITE")
 m.to_streamlit(height=500)
