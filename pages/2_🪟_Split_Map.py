@@ -3,21 +3,20 @@ import leafmap.foliumap as leafmap
 
 st.set_page_config(layout="wide")
 
-markdown = """
-A Streamlit map template
-<https://github.com/opengeos/streamlit-map-template>
-"""
 
-st.sidebar.title("About")
-st.sidebar.info(markdown)
+st.sidebar.title("Agri_Performance")
 logo = "https://i.imgur.com/UbOXYAU.png"
 st.sidebar.image(logo)
 
+
+
 st.title("Split-panel Map")
+
+
 
 with st.expander("See source code"):
     with st.echo():
-        m = leafmap.Map()
+        m = leafmap.Map(center=[45.224461, -0.773946], zoom=10)
         m.split_map(
             left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
         )
