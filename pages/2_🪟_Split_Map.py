@@ -14,12 +14,16 @@ st.title("Split-panel Map")
 
 
 
-with st.expander("See source code"):
+with st.expander("Explaination"):
     with st.echo():
-        m = leafmap.Map(center=[45.224461, -0.773946], zoom=14)
-        m.split_map(
-            left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
-        )
-        m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
+        st.write('left panel shows the NDVI index')
+        st.write('right panel shows ESA land cover as shown in the legend')
+
+
+m = leafmap.Map(center=[45.224461, -0.773946], zoom=14)
+m.split_map(
+    left_layer="ESA WorldCover 2020 S2 FCC", right_layer="ESA WorldCover 2020"
+)
+m.add_legend(title="ESA Land Cover", builtin_legend="ESA_WorldCover")
 
 m.to_streamlit(height=700)
