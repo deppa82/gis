@@ -15,9 +15,8 @@ st.title("Split-panel Map")
 
 
 with st.expander("Explaination"):
-    with st.echo():
-        st.write('left panel shows the NDVI index')
-        st.write('right panel shows ESA land cover as shown in the legend')
+    st.write('left panel shows the NDVI index')
+    st.write('right panel shows ESA land cover as shown in the legend')
 
 
 m = leafmap.Map(center=[45.224461, -0.773946], zoom=14)
